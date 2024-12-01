@@ -1,0 +1,35 @@
+*::-webkit-input-placeholder {
+    color:#aaa !important;
+}
+*::-moz-placeholder {
+    color:#aaa !important;
+}
+:-moz-placeholder {
+    color:#aaa !important;
+}
+:-ms-input-placeholder {
+    color:#aaa !important;
+}
+
+.dropdown-navbar a:hover {
+    transform: none !important;
+    text-decoration: underline !important;
+}
+.dashed-underline{
+    border-bottom: 1px dashed #428bca;
+   text-decoration: none!important;
+}
+
+.tooltip-inner {
+   max-width: 400px !important;
+   text-align: left !important;
+}
+.italic {
+   font-style: italic;
+}
+
+.select2-container--open .select2-dropdown {
+   max-width: 100% !important;
+   min-width: 100% !important;
+   width: 100% !important;
+}
