@@ -201,26 +201,52 @@
                   <script src="./Main_mercury_files/jquery.mask.min.js"></script>
                   <script>
                      $(document).ready(function () {
-                        $("#uuid").mask('ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ', {translation: { 'Z': {pattern: /[a-fA-F0-9]/} } });
+                        // Маска для ввода остаётся прежней
+                        $("#uuid").mask('ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ', {
+                           translation: { 'Z': {pattern: /[a-fA-F0-9]/} }
+                        });
+
                         $("#uuid").on("keyup keypress", function(e) {
-                           var code = e.keyCode || e.which;
-                           if (code  == 13) {
-                              findVetDocument($("#uuid"));
-                              e.preventDefault();
-                              return false;
+                           if (e.which === 13) {
+                                 findVetDocument($("#uuid"));
+                                 e.preventDefault();
+                                 return false;
                            }
                         });
                      });
+
                      function findVetDocument(elem) {
+                        // Убираем класс ошибки
                         elem.closest(".form-group-input-button").removeClass("has-error");
+
+                        // Проверяем формат введенного кода
                         var expr = new RegExp("[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}");
+
                         if (!expr.test(elem.val())) {
+                           // Показываем ошибку если формат неверный
                            elem.closest(".form-group-input-button").addClass("has-error");
-                           elem.data("placement", "bottom").addClass("tooltip-error").tooltip({title:"Код ветеринарного документа указан некорректно", html:'html', delay: {show: 750, hide: 750}});
+                           elem.data("placement", "bottom")
+                                 .addClass("tooltip-error")
+                                 .tooltip({
+                                    title: "Код ветеринарного документа указан некорректно",
+                                    html: 'html',
+                                    delay: {show: 750, hide: 750}
+                                 });
                            elem.tooltip('show');
                            return false;
                         }
-                        window.location.href= 'operatorui?_action=findVetDocumentFormByUuid&uuid=' + elem.val();
+
+                        // Получаем текущий идентификатор со страницы
+                        var currentId = $(".profile-info-value span:contains('-')").text().trim();
+
+                        // Проверяем, совпадает ли введенный код с текущим
+                        if (elem.val().toUpperCase() === currentId) {
+                           // Если да - просто обновляем страницу
+                           window.location.reload();
+                        } else {
+                           // Если нет - переходим на новую страницу
+                           window.location.href = 'operatorui?_action=findVetDocumentFormByUuid&uuid=' + elem.val();
+                        }
                      }
                   </script>
                   <style>
@@ -628,30 +654,30 @@
          jQuery(function($) {
           var $sidebar = $('.sidebar').eq(0);
           if( !$sidebar.hasClass('h-sidebar') ) return;
-         
+
           $(document).on('settings.ace.top_menu' , function(ev, event_name, fixed) {
          	if( event_name !== 'sidebar_fixed' ) return;
-         
+
          	var sidebar = $sidebar.get(0);
          	var $window = $(window);
-         
+
          	//return if sidebar is not fixed or in mobile view mode
          	if( !fixed || ( ace.helper.mobile_view() || ace.helper.collapsible() ) ) {
          		$sidebar.removeClass('hide-before');
          		//restore original, default marginTop
          		ace.helper.removeStyle(sidebar , 'margin-top')
-         
+
          		$window.off('scroll.ace.top_menu')
          		return;
          	}
          	 var done = false;
          	 $window.on('scroll.ace.top_menu', function(e) {
-         
+
          		var scroll = $window.scrollTop();
          		scroll = parseInt(scroll / 4);//move the menu up 1px for every 4px of document scrolling
          		if (scroll > 17) scroll = 17;
-         
-         
+
+
          		if (scroll > 16) {
          			if(!done) {
          				$sidebar.addClass('hide-before');
@@ -664,19 +690,19 @@
          				done = false;
          			}
          		}
-         
+
          		sidebar.style['marginTop'] = (17-scroll)+'px';
          	 }).triggerHandler('scroll.ace.top_menu');
-         
+
           }).triggerHandler('settings.ace.top_menu', ['sidebar_fixed' , $sidebar.hasClass('sidebar-fixed')]);
-         
+
           $(window).on('resize.ace.top_menu', function() {
          	$(document).triggerHandler('settings.ace.top_menu', ['sidebar_fixed' , $sidebar.hasClass('sidebar-fixed')]);
           });
-         
-         
+
+
          });
-         
+
          $(document).ready( function() {
                       $('label[data-for]').off('click').on('click', function(){
                           var id =$(this).attr('data-for');
