@@ -13,7 +13,7 @@ body .navbar .navbar-brand {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: normal;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(../fonts/OpenSans-Regular-webfont.woff) format('woff');
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(./OpenSans-Regular-webfont.woff) format('woff');
 }
 .navbar{
   background-color: #fafafa;
