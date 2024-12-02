@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0118)https://mercury.vetrf.ru/pub/operatorui?_action=findVetDocumentFormByUuid&uuid=C972-BC34-F0E5-4815-9070-D004-ACA5-226B -->
+<!-- saved from url=(0115)https://mercury.vetrf.ru/pub/operatorui?_action=showVetDocumentFormByUuid&uuid=a193838a-ef22-40c9-8d9f-920016fbf1dc -->
 <html lang="ru">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -9,7 +9,6 @@
       <link rel="shortcut icon" href="https://mercury.vetrf.ru/vetcontrol-docs/common/img/mercury.ico" type="image/x-icon">
       <link rel="icon" href="https://mercury.vetrf.ru/vetcontrol-docs/common/img/mercury.ico" type="image/x-icon">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
       <title>Меркурий</title>
       <meta name="description" content="top menu &amp; navigation">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -47,7 +46,7 @@
       <![endif]-->
       <!-- from Argus -->
       <script src="./assets/jquery-1.10.1.min.js" type="text/javascript"></script>
-      <script src="./assets/default.js" type="text/javascript"></script>
+      <script src="./assets/default-dop.js" type="text/javascript"></script>
       <script src="./assets/ajax.js" type="text/javascript"></script>
       <script src="./assets/csshorizontalmenu.js" type="text/javascript"></script>
       <link rel="stylesheet" href="./assets/jquery-ui.custom.min.css">
@@ -79,7 +78,7 @@
                   <small>
                      <img src="./assets/mercury-alpha-mini.png" style="padding-right:4px;">
                      Меркурий
-                     <img src="https://mercury.vetrf.ru/pub/operatorui?_action=findVetDocumentFormByUuid&amp;uuid=C972-BC34-F0E5-4815-9070-D004-ACA5-226B" class="newyear" id="snowman" style="height:40px;margin-top: -2px;margin-bottom: -3px;margin-left: 5px;display:none;">
+                     <img src="https://mercury.vetrf.ru/pub/operatorui?_action=showVetDocumentFormByUuid&amp;uuid=a193838a-ef22-40c9-8d9f-920016fbf1dc" class="newyear" id="snowman" style="height:40px;margin-top: -2px;margin-bottom: -3px;margin-left: 5px;display:none;">
                      <script type="text/javascript">
                         showNewYear("img.newyear");
                      </script>
@@ -301,7 +300,7 @@
                      <div style="text-align: right">
                         <div class="form-group-input-button" style="display: inline;">
                            <div class="input-group" style="width:350px">
-                              <input id="uuid" style="width: 310px; height: 30px;" name="uuid" value="" onreset="resetTextField(&#39;uuid&#39;);" type="text" placeholder="поиск по коду ветеринарного документа" maxlength="39" autocomplete="off" wfd-id="id0">
+                              <input id="uuid" style="width: 310px; height: 30px;" name="uuid" value="" onreset="resetTextField(&#39;uuid&#39;);" type="text" placeholder="поиск по коду ветеринарного документа" maxlength="39" autocomplete="off">
                               <span class="input-group-btn">
                               <button class="btn btn-xs btn-default" style="width: 30px; height: 30px;" type="button" onclick="javascript: findVetDocument($(&#39;#uuid&#39;));">
                               <i class="fa fa-search bigger-110"></i>
@@ -313,9 +312,6 @@
                      <div>
                         <h1>
                            Просмотр информации о ВСД
-                           <div class="action-block btn-group">
-                              <button class="btn btn-info btn-white btn-bold no-border" type="button" onclick="window.location.href = &#39;operatorui?_action=printVetDocumentByUuid&amp;uuid=c972bc34-f0e5-4815-9070-d004aca5226b&amp;timestamp=1733011282163&#39;;"><i class="ace-icon fa fa-print bigger-110"></i>Печать</button>
-                           </div>
                         </h1>
                      </div>
                   </div>
@@ -330,34 +326,24 @@
                               </div>
                               <div class="profile-info-row">
                                  <div class="profile-info-name">Номер ВСД</div>
-                                 <div class="profile-info-value"><span class="">27089421264</span></div>
+                                 <div class="profile-info-value"><span class="">29707496124</span></div>
                               </div>
                               <div class="profile-info-row">
                                  <div class="profile-info-name">Уникальный идентификатор ВСД</div>
-                                 <div class="profile-info-value"><span class="">AB5D-687E-E3FE-04B3-FAF0-A9EB-63BD-2AE9</span></div>
+                                 <div class="profile-info-value"><span class="">F3DF-9F94-1CCB-EB3C-CF6C-BDD4-41AF-703A</span></div>
                               </div>
                               <div class="profile-info-row">
                                  <div class="profile-info-name">Дата оформления</div>
-                                 <div class="profile-info-value"><span class="">02.12.2024 12:13:22 МСК<br>
-                                 02.12.2024 11:13:22 МСК-1</span></div>
+                                 <div class="profile-info-value"><span class="">02.12.2024 10:23:19 МСК<br>
+                                 02.12.2024 09:23:19 МСК-1</span></div>
                               </div>
                               <div class="profile-info-row">
                                  <div class="profile-info-name">Наименование и форма ВСД</div>
-                                 <div class="profile-info-value"><span class="">Ветеринарное свидетельство. Форма № 2</span></div>
+                                 <div class="profile-info-value"><span class="">Производственный сертификат. Форма № 1</span></div>
                               </div>
                               <div class="profile-info-row">
                                  <div class="profile-info-name">Способ оформления</div>
-                                 <div class="profile-info-value"><span class="">веб-интерфейс</span></div>
-                              </div>
-                              <div class="profile-info-row">
-                                 <div class="profile-info-name">Защищенный бланк ВСД</div>
-                                 <div class="profile-info-value"><span class=""></span></div>
-                              </div>
-                              <div class="profile-info-row">
-                                 <div class="profile-info-name">Регионализация</div>
-                                 <div class="profile-info-value">
-                                    Согласно правилам регионализации данная продукция может перемещаться в адрес указанного получателя
-                                 </div>
+                                 <div class="profile-info-value"><span class="">шлюз ВетИС.API</span></div>
                               </div>
                            </div>
                            <div class="row">
@@ -368,7 +354,7 @@
                                        <div class="profile-info-name">Номер производственной партии</div>
                                        <div class="profile-info-value">
                                           <ul>
-                                             <li>1354934</li>
+                                             <li>1354928</li>
                                           </ul>
                                        </div>
                                     </div>
@@ -398,7 +384,7 @@
                                     </div>
                                     <div class="profile-info-row">
                                        <div class="profile-info-name">Объём</div>
-                                       <div class="profile-info-value"><span class="">17577,87 кг</span></div>
+                                       <div class="profile-info-value"><span class="">17779.42 кг</span></div>
                                     </div>
                                     <div class="profile-info-row">
                                        <div class="profile-info-name">Дата выработки продукции</div>
@@ -416,7 +402,7 @@
                                                 <li>
                                                    Торговый уровень
                                                    <ul style="list-style-type:disc;padding-left: 20px;">
-                                                      <li>Коробка из фибрового картона (4G), 1&nbsp;135 шт., маркировка: ООО Восходящая звезда&nbsp;<span class="help">(Не определен)</span></li>
+                                                      <li>Коробка из фибрового картона (4G), 1&nbsp;144 шт., маркировка: ООО Восходящая звезда&nbsp;<span class="help">(Не определен)</span></li>
                                                    </ul>
                                                 </li>
                                                 <li>
@@ -430,32 +416,8 @@
                                        </div>
                                     </div>
                                     <div class="profile-info-row">
-                                       <div class="profile-info-name">Благополучие местности</div>
-                                       <div class="profile-info-value"><span class="">Местность благополучна по заразным болезням животных и птиц, кроме лейкоза крупного рогатого скота и Алеутской болезни норок</span></div>
-                                    </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Цель</div>
-                                       <div class="profile-info-value"><span class="">реализация в пищу людям</span></div>
-                                    </div>
-                                    <div class="profile-info-row">
                                        <div class="profile-info-name">Ветеринарно-санитарная экспертиза</div>
                                        <div class="profile-info-value"><span class="">изготовлена из сырья, прошедшего ветеринарно-санитарную экспертизу</span></div>
-                                    </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Особые отметки</div>
-                                       <div class="profile-info-value"><span class="">Лабораторные исследования: протокол испытаний № 39-00-25/05046-24 от 02.12.2024 КИЛ ФГБУ "ВНИИЗЖ" Температура транспортировки 0+6 C</span></div>
-                                    </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Номер и дата входящего ВСД</div>
-                                       <div class="profile-info-value"><span class=""></span></div>
-                                    </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Номер и дата производственного ВСД</div>
-                                       <div class="profile-info-value"><span class="">№ 29707496130 от 02.12.2024</span></div>
-                                    </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Примечание</div>
-                                       <div class="profile-info-value"><span class=""></span></div>
                                     </div>
                                  </div>
                                  <h3 class="header smaller lighter blue"><small>Фасовка</small></h3>
@@ -475,48 +437,26 @@
                                  </div>
                               </div>
                               <div class="col-md-6">
-                                 <h3 class="header smaller lighter blue"><small>Сведения о транспорте</small></h3>
-                                 <div class="profile-user-info profile-user-info-striped">
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Тип транзакции</div>
-                                       <div class="profile-info-value"><span class="">перевозка со сменой владельца</span></div>
-                                    </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Тип транспорта</div>
-                                       <div class="profile-info-value"><span class="">Автомобильный</span></div>
-                                    </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Номер автомашины / полуприцепа / контейнера</div>
-                                       <div class="profile-info-value">
-                                          О 477 МН 39 / АМ 5759 39 / —
-                                          <img class="flag-svg" src="./assets/flag_74a3cbb1-56fa-94f3-ab3f-e8db4940d96b.svg" title="Российская Федерация" alt="" onerror="$(this).hide()">
-                                       </div>
-                                    </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Способ хранения при перевозке</div>
-                                       <div class="profile-info-value"><span class="">охлажденные</span></div>
-                                    </div>
-                                 </div>
                                  <h3 class="header smaller lighter blue"><small>Сведения об оформлении</small></h3>
                                  <div class="profile-user-info profile-user-info-striped">
                                     <div class="profile-info-row">
                                        <div class="profile-info-name">Учреждение</div>
-                                       <div class="profile-info-value"><span class="">СП "Калининградская ВС" ГБУВ КО "Областная СББЖ" (Российская Федерация, Калининградская область) </span></div>
+                                       <div class="profile-info-value"><span class="">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МК-БАЛТИКА" (РФ, Калининградская обл., п. Котельниково)</span></div>
                                     </div>
                                     <div class="profile-info-row">
                                        <div class="profile-info-name">ФИО</div>
-                                       <div class="profile-info-value"><span class="">Шишкина Марина Анатольевна&nbsp;</span></div>
+                                       <div class="profile-info-value"><span class="">Филимонова Алина Александровна</span></div>
                                     </div>
                                     <div class="profile-info-row">
                                        <div class="profile-info-name">Должность</div>
-                                       <div class="profile-info-value"><span class="">ветеринарный врач 2 категории</span></div>
+                                       <div class="profile-info-value"><span class=""></span></div>
                                     </div>
                                     <div class="profile-info-row">
                                        <div class="profile-info-name">Контактный телефон</div>
-                                       <div class="profile-info-value"><span class=""></span></div>
+                                       <div class="profile-info-value"><span class="">&nbsp;</span></div>
                                     </div>
                                  </div>
-</div>
+                              </div>
                            </div>
                            <div class="row">
                               <div class="col-md-6">
@@ -534,31 +474,10 @@
                                           ООО "МК-БАЛТИКА" (РФ, Калининград ская обл., п. Котельниково)<br>
                                        </div>
                                     </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Наименование продукции при производстве</div>
-                                       <div class="profile-info-value"><span class="">Колбаса Филейная</span></div>
-                                    </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Артикул производителя</div>
-                                       <div class="profile-info-value"><span class="">4301011943</span></div>
-                                    </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">GTIN</div>
-                                       <div class="profile-info-value"><span class="">4680115884830</span></div>
-                                    </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Документ, подтверждающий происхождение</div>
-                                       <div class="profile-info-value">
-                                          <a href="./operatorui_action=findVetDocumentFormByUuid&uuid=B9DD-36D0-0AD9-B0FB-F085-F9CC-FE4D-A18A.html">№
-                                          29707496130 от 02.12.2024</a>
-                                          &nbsp;<span class="label label-success">оформлен</span>
-                                          <br>
-                                       </div>
-                                    </div>
                                  </div>
                               </div>
                               <div class="col-md-6">
-                                 <h3 class="header smaller lighter blue" onclick="$(this).next(&#39;.profile-user-info&#39;).toggle();$(this).find(&#39;i&#39;).toggle();" style="cursor: pointer;"><small class="dashed-underline" style="border-color: #777;">Служебная информация</small>&nbsp;<i class="fa fa-angle-double-up" style="font-size: 16px; display:none;"></i><i class="fa fa-angle-double-down" style="font-size: 16px;"></i></h3>
+                                 <h3 class="header smaller lighter blue" onclick="$(this).next(&#39;.profile-user-info&#39;).toggle();$(this).find(&#39;i&#39;).toggle();" style="cursor: pointer;"><small class="dashed-underline" style="border-color: #777;">Служебная информация</small>&nbsp;<i class="fa fa-angle-double-up" style="font-size: 16px; display: none;"></i><i class="fa fa-angle-double-down" style="font-size: 16px; display: inline-block;"></i></h3>
                                  <div class="profile-user-info profile-user-info-striped" style="display: none;">
                                     <div class="profile-info-row">
                                        <div class="profile-info-name">Уникальный идентификатор версии номенклатуры (UUID)</div>
@@ -568,33 +487,12 @@
                                        <div class="profile-info-name">Глобальный идентификатор номенклатуры (GUID)</div>
                                        <div class="profile-info-value"><span class="">ec6bd261-7e77-4269-b285-12ed2bd0e56a</span></div>
                                     </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Уникальный идентификатор версии продукции при производстве (UUID)</div>
-                                       <div class="profile-info-value"><span class="">bdfb5e7d-2c6d-4bca-a8bf-b4957e6ccc4d</span></div>
-                                    </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Глобальный идентификатор продукции при производстве (GUID)</div>
-                                       <div class="profile-info-value"><span class="">ec6bd261-7e77-4269-b285-12ed2bd0e56a</span></div>
-                                    </div>
                                  </div>
                               </div>
                            </div>
                            <div class="row">
                               <div class="col-md-6">
-                                 <h3 class="header smaller lighter blue"><small>Сведения о получателе</small></h3>
-                                 <div class="profile-user-info profile-user-info-striped">
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Название предприятия</div>
-                                       <div class="profile-info-value"><span class="">Центральный складской комплекс (ЦСК) (600005, Российская Федерация, Владимирская обл., г. Владимир, Промышленный проезд, д. 18)</span></div>
-                                    </div>
-                                    <div class="profile-info-row">
-                                       <div class="profile-info-name">Хозяйствующий субъект (владелец продукции)</div>
-                                       <div class="profile-info-value"><span class="">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ТРЕЙД-СЕРВИС", ИНН: 3328434156</span></div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-md-6">
-                                 <h3 class="header smaller lighter blue"><small>Сведения об отправителе</small></h3>
+                                 <h3 class="header smaller lighter blue"><small>Сведения о владельце</small></h3>
                                  <div class="profile-user-info profile-user-info-striped">
                                     <div class="profile-info-row">
                                        <div class="profile-info-name">Название предприятия</div>
@@ -607,28 +505,7 @@
                                  </div>
                               </div>
                            </div>
-                           <input id="_action" name="_action" type="hidden" value="findVetDocumentFormByUuid" wfd-id="id1">
-                           <h3 class="header smaller lighter blue"><small>Сведения о документах</small></h3>
-                           <table class="table table-striped table-bordered">
-                              <thead>
-                                 <tr>
-                                    <td class="theader">Серия</td>
-                                    <td class="theader">Номер</td>
-                                    <td class="theader">Дата</td>
-                                    <td class="theader">Тип</td>
-                                 </tr>
-                                 <tr>
-                                 </tr>
-                              </thead>
-                              <tbody>
-                                 <tr class="">
-                                    <td class="tbody"></td>
-                                    <td class="tbody">б/н</td>
-                                    <td class="tbody">02.12.2024</td>
-                                    <td class="tbody">CMR</td>
-                                 </tr>
-                              </tbody>
-                           </table>
+                           <input id="_action" name="_action" type="hidden" value="findVetDocumentFormByUuid">
                         </form>
                      </div>
                   </div>
@@ -656,7 +533,7 @@
                <!-- /section:basics/footer -->
             </div>
          </div>
-         <a href="https://mercury.vetrf.ru/pub/operatorui?_action=findVetDocumentFormByUuid&amp;uuid=C972-BC34-F0E5-4815-9070-D004-ACA5-226B#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+         <a href="https://mercury.vetrf.ru/pub/operatorui?_action=showVetDocumentFormByUuid&amp;uuid=a193838a-ef22-40c9-8d9f-920016fbf1dc#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
          <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
          </a>
       </div>
