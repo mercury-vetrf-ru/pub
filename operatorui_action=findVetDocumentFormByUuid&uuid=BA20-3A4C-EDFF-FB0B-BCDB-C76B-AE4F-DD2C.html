@@ -248,16 +248,6 @@
                         return (maxLength - levenshteinDistance) / maxLength;
                      }
 
-                     function updateURLWithAnchor(anchor) {
-                        if (history.pushState) {
-                           var newURL = window.location.protocol + "//" + window.location.host + window.location.pathname + "#" + anchor;
-                           history.pushState(null, null, newURL);
-                        } else {
-                           // Фолбек для старых браузеров
-                           window.location.hash = anchor;
-                        }
-                     }
-
                      function findVetDocument(elem) {
                         // Убираем класс ошибки
                         elem.closest(".form-group-input-button").removeClass("has-error");
@@ -764,7 +754,6 @@
                       $(window).resize(fixHeader)
                       fixHeader();
                       $("[data-rel='tooltip']").tooltip();
-                      updateURLWithAnchor('operatorui?_action=findVetDocumentFormByUuid&uuid=' + $(".profile-info-value span:contains('-')").text().trim());
                   });
       </script>
       <script src="./Main_mercury_files/elements.onpage-help.js"></script>
