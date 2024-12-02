@@ -2,10 +2,10 @@ var loadImg = new Image();
 var winCloseImg = new Image();
 var winCloseOnImg = new Image();
 var ajaxVetcontrol = new Object();
-loadImg.src = "./Main_mercury_files/ajax-loader.gif";
-var preloaderImg ="./Main_mercury_files/sprites.png";
-winCloseImg.src = "./Main_mercury_files/winClose.gif";
-winCloseOnImg.src = "./Main_mercury_files/winCloseOn.gif";
+loadImg.src = "./assets/ajax-loader.gif";
+var preloaderImg ="./assets/sprites.png";
+winCloseImg.src = "./assets/winClose.gif";
+winCloseOnImg.src = "./assets/winCloseOn.gif";
 ajaxVetcontrol.active = 0;
 
 function init() {
