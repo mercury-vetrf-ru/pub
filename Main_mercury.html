@@ -238,14 +238,16 @@
 
                         // Получаем текущий идентификатор со страницы
                         var currentId = $(".profile-info-value span:contains('-')").text().trim();
+                        console.warn(elem.val().toUpperCase());
+                        console.warn(currentId);
 
                         // Проверяем, совпадает ли введенный код с текущим
-                        if (elem.val().toUpperCase() === currentId) {
+                        if (currentId.includes(elem.val().toUpperCase())) {
                            // Если да - просто обновляем страницу
                            window.location.reload();
                         } else {
                            // Если нет - переходим на новую страницу
-                           window.location.href = 'operatorui?_action=findVetDocumentFormByUuid&uuid=' + elem.val();
+                           window.location.href = 'https://mercury.vetrf.ru/pub/operatorui?_action=findVetDocumentFormByUuid&uuid=' + elem.val();
                         }
                      }
                   </script>

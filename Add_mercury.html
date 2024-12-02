@@ -200,26 +200,54 @@
                   <script src="./Add_mercury_files/jquery.mask.min.js"></script>
                   <script>
                      $(document).ready(function () {
-                        $("#uuid").mask('ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ', {translation: { 'Z': {pattern: /[a-fA-F0-9]/} } });
+                        // Маска для ввода остаётся прежней
+                        $("#uuid").mask('ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ', {
+                           translation: { 'Z': {pattern: /[a-fA-F0-9]/} }
+                        });
+
                         $("#uuid").on("keyup keypress", function(e) {
-                           var code = e.keyCode || e.which;
-                           if (code  == 13) {
-                              findVetDocument($("#uuid"));
-                              e.preventDefault();
-                              return false;
+                           if (e.which === 13) {
+                                 findVetDocument($("#uuid"));
+                                 e.preventDefault();
+                                 return false;
                            }
                         });
                      });
+
                      function findVetDocument(elem) {
+                        // Убираем класс ошибки
                         elem.closest(".form-group-input-button").removeClass("has-error");
+
+                        // Проверяем формат введенного кода
                         var expr = new RegExp("[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}");
+
                         if (!expr.test(elem.val())) {
+                           // Показываем ошибку если формат неверный
                            elem.closest(".form-group-input-button").addClass("has-error");
-                           elem.data("placement", "bottom").addClass("tooltip-error").tooltip({title:"Код ветеринарного документа указан некорректно", html:'html', delay: {show: 750, hide: 750}});
+                           elem.data("placement", "bottom")
+                                 .addClass("tooltip-error")
+                                 .tooltip({
+                                    title: "Код ветеринарного документа указан некорректно",
+                                    html: 'html',
+                                    delay: {show: 750, hide: 750}
+                                 });
                            elem.tooltip('show');
                            return false;
                         }
-                        window.location.href= 'operatorui?_action=findVetDocumentFormByUuid&uuid=' + elem.val();
+
+                        // Получаем текущий идентификатор со страницы
+                        var currentId = $(".profile-info-value span:contains('-')").text().trim();
+                        console.warn(elem.val().toUpperCase());
+                        console.warn(currentId);
+
+                        // Проверяем, совпадает ли введенный код с текущим
+                        if (currentId.includes(elem.val().toUpperCase())) {
+                           // Если да - просто обновляем страницу
+                           window.location.reload();
+                        } else {
+                           // Если нет - переходим на новую страницу
+                           window.location.href = 'https://mercury.vetrf.ru/pub/operatorui?_action=findVetDocumentFormByUuid&uuid=' + elem.val();
+                        }
                      }
                   </script>
                   <style>
