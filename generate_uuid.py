@@ -6,7 +6,7 @@ def generate_uuid():
     def generate_block():
         # Допустимые символы: 0-9, a-f, A-F
         chars = string.hexdigits
-        return ''.join(random.choice(chars) for _ in range(4))
+        return (''.join(random.choice(chars) for _ in range(4))).upper()
     
     # Генерируем 8 блоков и соединяем их дефисами
     blocks = [generate_block() for _ in range(8)]
