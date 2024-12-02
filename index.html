@@ -248,6 +248,16 @@
                         return (maxLength - levenshteinDistance) / maxLength;
                      }
 
+                     function updateURLWithAnchor(anchor) {
+                        if (history.pushState) {
+                           var newURL = window.location.protocol + "//" + window.location.host + window.location.pathname + "#" + anchor;
+                           history.pushState(null, null, newURL);
+                        } else {
+                           // Фолбек для старых браузеров
+                           window.location.hash = anchor;
+                        }
+                     }
+
                      function findVetDocument(elem) {
                         // Убираем класс ошибки
                         elem.closest(".form-group-input-button").removeClass("has-error");
@@ -549,7 +559,7 @@
                                     <div class="profile-info-row">
                                        <div class="profile-info-name">Документ, подтверждающий происхождение</div>
                                        <div class="profile-info-value">
-                                          <a href="./Add_mercury.html">№
+                                          <a href="./operatorui_action=findVetDocumentFormByUuid&uuid=FBE2-A1EF-FBC1-4D13-FFC2-16F5-8BBE-2DBC.html">№
                                           29707496112 от 29.11.2024</a>
                                           &nbsp;<span class="label label-success">оформлен</span>
                                           <br>
@@ -754,6 +764,7 @@
                       $(window).resize(fixHeader)
                       fixHeader();
                       $("[data-rel='tooltip']").tooltip();
+                      updateURLWithAnchor('operatorui?_action=findVetDocumentFormByUuid&uuid=' + $(".profile-info-value span:contains('-')").text().trim());
                   });
       </script>
       <script src="./Main_mercury_files/elements.onpage-help.js"></script>
