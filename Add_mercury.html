@@ -214,6 +214,39 @@
                         });
                      });
 
+                     function calculateSimilarity(str1, str2) {
+                        var len1 = str1.length;
+                        var len2 = str2.length;
+
+                        // Создаем матрицу
+                        var dp = Array(len1 + 1)
+                           .fill(null)
+                           .map(() => Array(len2 + 1).fill(0));
+
+                        // Заполняем базовые значения
+                        for (var i = 0; i <= len1; i++) dp[i][0] = i;
+                        for (var j = 0; j <= len2; j++) dp[0][j] = j;
+
+                        // Основной цикл
+                        for (var i = 1; i <= len1; i++) {
+                           for (var j = 1; j <= len2; j++) {
+                                 var cost = str1[i - 1] === str2[j - 1] ? 0 : 1;
+                                 dp[i][j] = Math.min(
+                                    dp[i - 1][j] + 1, // Удаление
+                                    dp[i][j - 1] + 1, // Вставка
+                                    dp[i - 1][j - 1] + cost // Замена
+                                 );
+                           }
+                        }
+
+                        // Расстояние Левенштейна
+                        var levenshteinDistance = dp[len1][len2];
+
+                        // Вычисляем коэффициент схожести
+                        var maxLength = Math.max(len1, len2);
+                        return (maxLength - levenshteinDistance) / maxLength;
+                     }
+
                      function findVetDocument(elem) {
                         // Убираем класс ошибки
                         elem.closest(".form-group-input-button").removeClass("has-error");
@@ -237,12 +270,17 @@
 
                         // Получаем текущий идентификатор со страницы
                         var currentId = $(".profile-info-value span:contains('-')").text().trim();
-                        console.warn(elem.val().toUpperCase());
-                        console.warn(currentId);
+                        currentId = currentId.substring(0, elem.val().length);
 
-                        // Проверяем, совпадает ли введенный код с текущим
-                        if (currentId.includes(elem.val().toUpperCase())) {
-                           // Если да - просто обновляем страницу
+                        // Преобразуем строки в верхний регистр
+                        var inputValue = elem.val().toUpperCase();
+
+                        // Вычисляем точность совпадения
+                        var similarity = calculateSimilarity(inputValue, currentId);
+
+                        // Проверяем совпадение (не менее 95%)
+                        if (similarity >= 0.95) {
+                           // Если совпадает - просто обновляем страницу
                            window.location.reload();
                         } else {
                            // Если нет - переходим на новую страницу
