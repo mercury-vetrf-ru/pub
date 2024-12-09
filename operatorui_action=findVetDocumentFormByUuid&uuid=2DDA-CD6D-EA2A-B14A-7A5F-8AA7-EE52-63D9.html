@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<!-- saved from url=(0115)https://mercury.vetrf.ru/pub/operatorui?_action=showVetDocumentFormByUuid&uuid=a193838a-ef22-40c9-8d9f-920016fbf1dc -->
+<html lang="ru">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--[if lt IE 7]>
+      <meta http-equiv="refresh" content="1; url=http://vetrf.ru/vetrf/badbrowser.html">
+      <![endif]-->
+      <link rel="shortcut icon" href="https://mercury.vetrf.ru/vetcontrol-docs/common/img/mercury.ico" type="image/x-icon">
+      <link rel="icon" href="https://mercury.vetrf.ru/vetcontrol-docs/common/img/mercury.ico" type="image/x-icon">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Меркурий</title>
+      <meta name="description" content="top menu &amp; navigation">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+      <link rel="stylesheet" href="./assets/app.css">
+      <link rel="stylesheet" href="./assets/mercury.css">
+      <!-- bootstrap & fontawesome -->
+      <link rel="stylesheet" href="./assets/bootstrap.min.css">
+      <link rel="stylesheet" href="./assets/awesome-font-face.css">
+      <link rel="stylesheet" href="./assets/font-vetis.css">
+      <link rel="stylesheet" href="./assets/font-awesome.min.css">
+      <!-- page specific plugin styles -->
+      <!-- text fonts -->
+      <link rel="stylesheet" href="./assets/ace-fonts.css">
+      <!-- ace styles -->
+      <link rel="stylesheet" href="./assets/ace.min.css" id="main-ace-style">
+      <!--[if lte IE 9]>
+      <link rel="stylesheet" href="/vetcontrol-docs/pub/css/ace-part2.min.css" />
+      <![endif]-->
+      <link rel="stylesheet" href="./assets/ace-skins.min.css">
+      <link rel="stylesheet" href="./assets/ace-rtl.min.css">
+      <link rel="stylesheet" href="./assets/app(1).css">
+      <link rel="stylesheet" href="./assets/duma.css">
+      <link href="./assets/chosen.css" rel="stylesheet">
+      <!--[if lte IE 9]>
+      <link rel="stylesheet" href="/vetcontrol-docs/pub/css/ace-ie.min.css" />
+      <![endif]-->
+      <!-- inline styles related to this page -->
+      <!-- ace settings handler -->
+      <style type="text/css" id="operaUserStyle"></style>
+      <script src="./assets/ace-extra.min.js"></script>
+      <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+      <!--[if lte IE 8]>
+      <script src="/vetcontrol-docs/pub/js/html5shiv.min.js"></script>
+      <script src="/vetcontrol-docs/pub/js/respond.min.js"></script>
+      <![endif]-->
+      <!-- from Argus -->
+      <script src="./assets/jquery-1.10.1.min.js" type="text/javascript"></script>
+      <script src="./assets/default-dop.js" type="text/javascript"></script>
+      <script src="./assets/ajax.js" type="text/javascript"></script>
+      <script src="./assets/csshorizontalmenu.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="./assets/jquery-ui.custom.min.css">
+      <link rel="stylesheet" href="./assets/jquery-ui.min.css">
+      <link rel="stylesheet" href="./assets/datepicker.css">
+      <link rel="stylesheet" href="./assets/bootstrap-timepicker.css">
+      <link rel="stylesheet" href="./assets/daterangepicker.css">
+      <link rel="stylesheet" href="./assets/bootstrap-datetimepicker.css">
+      <link rel="stylesheet" href="./assets/prettify.css">
+      <script type="text/javascript">
+         function changeLanguge(lang) {
+            doAjaxPOST("operatorui?_action=changeLanguage", init(), {language : lang}, function() {window.location.reload();});
+         }
+      </script>
+      <style type="text/css">:root [href^="//mage98rquewz.com/"], :root div[id*="ScriptRoot"]:not(.eyeo), :root img[style*="//counter.yadro.ru/"], :root img[src^="/stat/"][width="88"][height="31"], :root img[src*="top.mail.ru/counter?"], :root img[src*="cycounter"][width="88"][height="31"], :root img[src*="://c.bigmir.net/"], :root a[href^="http://hitcounter.ru/top/stat.php"], :root a[href^="http://click.hotlog.ru/"], :root a[href*="/rating/"] > img[width="88"][height="31"], :root a#mobtop[title^="Рейтинг мобильных сайтов"], :root [title="uWeb Counter"], :root [title="uCoz Counter"], :root .min-width-normal > #popup_container ~ #fade, :root .min-width-normal > #popup_container, :root body > div[class^="_"][class*=" _"][class$="_stBig"], :root body > div[style="position: fixed; z-index: 999999; width: 400px; height: 308px; right: 5px; bottom: 5px;"], :root .flex-promo-series > .left-col > :not(#players):not(.serial-series-info), :root a[href*="://news.mirtesen.ru/newdata/"], :root .app.blog-post-page #blog-post-item-video-ad, :root #root > .app .sportrecs, :root #root > .app #very-right-column, :root body.has-brand .b-content__main > div[style^="height: 250px; overflow: hidden;"], :root body.has-brand .b-content__main > div[id]:not([class]):empty, :root body.has-brand .b-content__main .b-player a[href*="aHR0c"], :root div[style="width: 252px; height: 450px; position: fixed; right: 0px; top: 0px; overflow: hidden; z-index: 10000;"], :root thetruestory-widget-top, :root object[data^="blob"], :root img[width="728"][height="90"], :root img[width="160"][height="600"], :root iframe[src*="trafic-media.ru"], :root iframe[src*="hd.gg33.top/"], :root iframe[src*="fwdcdn.com/frame/partners/"], :root iframe[src*="ads.exosrv.com"], :root iframe[src*="://vidroll.ru/"], :root iframe[src*="://promo-bc.com/"], :root iframe[src*="://mark-media.com.ua"], :root iframe[src*="://ab.adpro.com.ua/"], :root iframe[src*="/mixadv_"], :root iframe[src*="/carta.ua/ajax/widget."], :root iframe[src*="/3647.tech"], :root iframe[id^="republer"], :root iframe[data-src*="fwdcdn.com/frame/partners/"], :root div[id^="yandex_rtb"], :root div[id^="trafmag_"], :root div[id^="tizerws_"], :root div[id^="rtn4p"], :root div[id^="republer_"], :root div[id^="news_nest_net_ru"], :root div[id^="news_nest_msk_ru"], :root div[id^="news_2xclick_ru_"], :root div[id^="join_informer_"], :root div[id^="itizergroup_"], :root div[id^="infox_"], :root div[id^="gnezdo_ru_"], :root div[id^="cpa_rotator_block"], :root div[id^="beroll_rotator"], :root div[id^="b_tz_"], :root div[id^="admixer_"], :root div[id^="admixer-"], :root div[id^="DIV_DA_"], :root div[data-server-rendered="true"] > div[id^="la-"], :root div[data-adv-type="dfp"], :root div[class^="mixadvert"], :root iframe[src^="https://a.adtng.com/"], :root div[class^="da-ya-widget"], :root div[class^="da-widget-"], :root div[class^="cnt32_"][id^="cnt_rb_"], :root div[class^="block_fortress"], :root div[class^="bidvol-widget-"], :root div[class^="adfinity_block_"], :root div[class*="td-a-rec-id-"], :root #root > .app .partner-block-wrapper, :root div[class*="spklw"][data-type="ad"], :root a[onclick*="trtkp.ru"], :root a[onclick*="offergate-amigo"], :root iframe[src*="litres.ru/static/widgets"], :root a[href^="https://www.juicer.io?referrer="], :root a[href^="https://wcm-ru.frontend.weborama.fr/fcgi-bin/dispatch.fcgi?"], :root a[href^="https://relap.io/"][href*="promo_ad_link"], :root a[href^="https://msetup.pro"], :root a[href^="https://bongacams"][href*="com/track?"], :root a[href^="http://trafmaster.com"], :root a[href^="http://traderstart.mirtesen.ru"], :root a[href^="http://tds-2.ru"], :root a[href^="http://glprt.ru/affiliate/"], :root a[href^="http://datxxx.com"], :root a[href^="http://browserload.info/"], :root a[href^="http://amigodistr.ru/"], :root img[data-src="https://catalog.orbita.co.il/orbita.gif"], :root a[href^="/images/obmen/"][href$=".php"][target="_blank"], :root a[href^="/go/ufiler?"], :root a[href^="/go/ubar?"], :root a[href="http://advert.mirtesen.ru/"], :root a[href*="xxxrevpushclcdu.com"], :root a[href*="ultrabit.ws"], :root a[href*="tvks.ru"], :root a[href*="trklp.ru"], :root a[href*="traflabs.xyz"], :root div[id^="CGCandy"], :root a[href*="tptrk.ru"], :root a[href*="top.24smi.info"], :root a[href*="shakesclick.com"], :root a[href*="shakescash.com"], :root a[href*="sapmedia.ru"], :root a[href*="sandratand.ru"], :root a[href*="rexchange.begun.ru/rclick?"], :root a[href*="retagapp.com"], :root a[href*="refpazus.top"], :root a[href*="problogrus.ru"], :root a[href*="please-direct.com"], :root a[href*="sviruniversal.com/"], :root a[href*="octoclick.net"], :root a[href*="nhebd.xyz"], :root a[href*="news"][href*="favid"], :root a[href*="media-rotate.com"], :root a[href*="makegreat.website"], :root a[href*="m1cpl.ru"], :root a[href*="linkmyc.com"], :root a[href*="navaxudoru.com"], :root a[href*="lifebloggersz.ru"], :root a[href*="kshop2.biz"], :root #root > .app .adfox-top, :root a[href*="joycasino.com/?partner="], :root a[href*="idealmedia.io"], :root a[href*="//softboxik1.ru/"], :root a[href*="flylinks.pw"], :root [data-la-block-show-id], :root a[href*="films.ws"], :root .section-subheader > .section-hotel-prices-header, :root a[href*="feellights.ru"], :root a[href*="cmsmodnews.com"], :root a[href*="shakesin.com"], :root a[href*="bgrndi.com"], :root a[href^="https://zirdough.net/"], :root a[href*="awesomeredirector"], :root a[href*="ads2-adnow.com"], :root a[href*="adpool.bet/"], :root a[href*="://ya-cdn.ru/r/"], :root a[href*="://www.meendoru.net/?partner="], :root a[href^="https://bs.serving-sys.com"], :root a[href*="://womens-journal.ru/"], :root a[href*="://vse-sdal.com/promo/"], :root [id^="ad-wrap-"], :root a[href^="https://go.tmrjmp.com"], :root a[href*="://ufiler-pro.ru/"], :root topadblock, :root a[href*="://tracker.partnersmelbet.ru/"], :root a[href*="://topclicks.club/"], :root a[href*="://tlmnt"][href*="/tracker/?partner="], :root a[title="TopTracker.Ru - Рейтинг трекеров."], :root a[href^="https://startgaming.net/tienda/" i], :root a[href*="://clickstats.fun/"], :root a[href*="://techdmn.com/"], :root a[href^="https://tracker.loropartners.com/"], :root [onclick*="traffic-media.co"], :root a[href*="://tatarkoresh.ru"], :root .flex-promo-series > .right-col a[href][target="_blank"], :root [href^="https://noqreport.com/"] > img, :root [class^="fpm_"][class*="_crss"], :root a[href*="://superiortds.ru/"], :root a[href*="://sugisatomi.com/"], :root div[data-dfp-id], :root a[href*="://shusnarmuk.com/"], :root a[href*="://segodnia.club/"], :root [href*="driverpack.io/"], :root a[href*="cpagetti1.com"], :root a[href*="://search-cdn.ru/r/"], :root a[href*="://ruprivate.club/"], :root a[href^="https://kshop"][href*=".com/"], :root a[href*="://ruonline.bar/"], :root a[href^="http://eaplay.ru/"], :root amp-connatix-player, :root a[href*="://riaccaw.com/"], :root [href^="https://join.playboyplus.com/track/"], :root a[href*="://hypmag.ru/search/pereh.php"], :root a[href*="://reidancis.com/"], :root a[href*=".cfm?domain="][href*="&fp="], :root a[href*="://ya-browser.ru/r/"], :root a[href*="://refpamjeql.top/"], :root [data-mobile-ad-id], :root a[href*="://ref.studwork.ru/"], :root a[href*="://r.advg.agency/"], :root a[href^="https://homyanus.com"], :root a[href*="please-direct.me"], :root a[href*="://profiledbase.com/"], :root div[id^="advertur_"], :root a[href*="://lapina.xyz/"], :root a[href*="://lapina.best/"], :root a[href*="/rlink/simptizer/"], :root a[href*="://gopremiumsoft.com/"], :root a[href*="://go.progfile.space/r/"], :root a[href*="://go.bundlebyte.net/r/"], :root a[href*="://go.btraffic.net/"], :root a[href*="://getbrauzer.ru/"], :root a[href*="://newbrowserme.ru/"], :root a[href*="://gertadv.ru/"], :root a[href*="torrentum.ru"], :root a[href*="://filesmytop.ru/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href*="://fast2click.ru/"], :root a[href*="tvkw.ru"], :root a[href*="://etcodes.com/"], :root a[href*="://et-cod.com/"], :root a[href^="https://go.xxxjmp.com"], :root a[href*="://elgrur.com/"], :root a[href*="://doxod24.online/"], :root a[href*="://downloadcontent2.ru/"], :root a[href*="://dmtech05.com/"], :root a[href*="://clickrpk.com/"], :root a[href*="://bubblevard.com/"], :root a[href*="://bs.serving-sys.ru/"], :root div[id^="adfox_"], :root a[href*="://bestnewsoft.ru/"], :root a[href*="://analyticsq.com"], :root a[href*="//universalin.info/"], :root a[href*="kodielinktrust.ru"], :root iframe[src*="://rstbtmd.com/"], :root a[href*="://101partners-stat2.com/"], :root a[href^="http://fly-shops.ru"], :root a[href*="/universal-lnk.net/"], :root a[href*="://vpnbrowser.ru/"], :root .nya-slot[style], :root a[href*="/uni-lnk.com/"], :root a[href*="://getyoursoft.ru/"], :root a[href*="/sb/clk/"], :root a[href*="://extlinka.ru/"], :root a[href*="/rapidtor.ru"], :root a[href*="://premiumredir.ru/"], :root a[href^="https://play1ad.shop/"], :root a[href*="/onvix.tv/promo/"][target=_blank], :root a[href*="/onvix.me/promo/"][target=_blank], :root a[href^="https://streamate.com/landing/click/"], :root a[href*="/newbrowser.club/"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href*="/myuniversalnk.net/"], :root a[href*="/myuniversalnk.com/"], :root a[href*="/mosday.ru/ad/"], :root a[href*="/loaderu.ru/"], :root a[href^="https://prime.rambler.ru/promo/"], :root a[href^="//s.zlinkd.com/"], :root a[href*="/installpack.net"], :root object[data*="ads.com/clk.swf"], :root a[href*="/eversaree.bid"], :root a[href*="://r.advmusic.com/"], :root a[href*="/clubleads.ru"], :root a[href*="/afftraf.co/"], :root a[href^="https://www8.smartadserver.com/"], :root a[href*="/advjump.com"], :root a[href*="://yadistr.ru/"], :root a[href*="//yojlf.com"], :root a[href*="://installpack.ru"], :root a[href*="//viruniversal.com/"], :root a[href*="//universalut.info/"], :root a[href*="//universalini.info/"], :root a[href*="//ubar.pro"], :root a[href*="//ubar-pro"], :root a[href*="://matchnow.info"], :root a[href*="/u-loads.ru/"], :root [href^="http://www.mypillow.com/"] > img, :root a[href^="//go.eabids.com/"], :root a[href*="//tranqvilius.com/"], :root div[data-adzone], :root a[href*="://tele.gg/"], :root a[href*="//tiruniversal.com/"], :root div[data-id^="div-gpt-ad-"], :root a[href*="//tekaners.com/"], :root [href^="https://optimizedelite.com/"] > img, :root a[href^="https://www.dating-finder.com/signup/?ai_d="], :root a[href*="//tdsrotate.ru/"], :root a[href*="//restofarian.com"], :root a[href*="//newbrowser.me/"], :root a[href^="https://bongacams10.com/track?"], :root a[href*="//loderna.ru"], :root [href^="https://www.restoro.com/"], :root a[href*="//loderls.ru"], :root a[href^="https://tour.mrskin.com/"], :root #BlWrapper > .b-temp_rbc, :root a[href*="//historategory.com/"], :root a[href*="//go.webredir.net/r/"], :root a[href*="//getmybrowser.ru/"], :root a[href*="://ya-distrib.ru/r/"], :root [href^="https://www.hostg.xyz/"] > img, :root a[href*="//clickdome.online/"], :root a[href*="//gerocenius.com/"], :root a[href*="//givemysoft.ru/"], :root a[href*="//febrare.ru/"], :root [id^="ad_slider"], :root a[href*="advertwebgid.ru"], :root a[href*="//ext-load.net"], :root a[href*="//dzen.ru"][href*="favid"], :root a[href^="https://www.adskeeper.com"], :root a[href*="bestforexplmdb.com"], :root a[href*="/universalsrc.com/"], :root a[href*="//bestonewos.com/"], :root a[href*="//avertise.ru/"], :root a[href*="//advtise.ru/"], :root div[id^="traffim-widget"], :root a[href^="https://m.do.co/c/"] > img, :root a[href*="//24smi."][href*="/top/"], :root a[href^="https://s.zlinkd.com/"], :root a[href*=".ufiler.pro/"], :root a[href*="://ufiler-download.ru/"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href*=".pokupkins.ru"], :root a[href*="://topsofto.ru/"], :root a[href*=".orgsales.ru"], :root [src^="//am15.net/?"], :root [id^="unit_"] > a[href*="://vrf.ru"], :root #root > .app > .sticky-button, :root a[href^="//ejitsirdosha.net/"], :root [href^="https://download.cdn.yandex.net/yandex-tag/weboffer/"], :root [href*="postlnk.com"], :root [href*="pigiuqproxy.com"], :root a[href^="https://pb-imc.com/"], :root a[href*=".braun634.com/"], :root a[href^="http://deskfrontfreely.com/"], :root a[href^="https://t.hrtye.com/"], :root [href*="://morelnk.ru/"], :root [href*="://clickpzk.com/"], :root [href*="://click.1k3web.com/"], :root [href*="/vaigowoa.com"], :root a[href^="https://www.liquidfire.mobi/"], :root a[href*="intovarro.ru"], :root [href*="/uni-tds.com/"], :root [href*="//takenewsofts.ru/"], :root a[href*="go.ad2up.com"], :root a[href^="https://hot-growngames.life/"], :root [data-src^="https://news.te.ua/widget/"], :root [data-membrana-container], :root [data-link*="://ubar-pro"], :root .header-banner > #moneyback[target="_blank"], :root [data-link*="/sb/clk/"], :root a[href*="offhealth.ru"], :root a[href*="://landingtracker.com/"], :root [data-link*="//ufiler-pro2.ru"], :root a[href^="http://handgripvegetationhols.com/"], :root [data-la-show-id], :root [data-la-show-block-id], :root div[id^="zcbclk"], :root [data-la-custom-block], :root a[href*="herrabjec.pro"], :root [data-la-block], :root [data-href^="https://download.cdn.yandex.net/yandex-tag/weboffer/"], :root [class^="fpm_"][class*="_out"], :root a[href^="http://luckiestclick.com/goto."], :root [class^="fpm_"][class*="_cross"], :root a[href^="http://naggingirresponsible.com/"], :root [href*=".drp.su/"], :root div[id^="ad-div-"], :root [class^="flat_"][class*="_modal"], :root div[id^="adpartner-jsunit-"], :root a[href*="/yfiles1.ru"], :root a[href*="wow-partners.com/click.php"], :root [class^="flat_"][class*="_cross"], :root iframe[title="mixAd"], :root a[href^="https://syndication.optimizesrv.com/"], :root DIV[id^="DIV_NNN_"], :root [data-testid="adBanner-wrapper"], :root .fp-player > div[style*="position: absolute"][style*="inset: 0px"][style*="overflow: hidden"][style*="z-index:"][style*="background: transparent"][style*="display: block"], :root .content_rb[id^="content_rb_"], :root a[href*="//loderla.online"], :root .base-page_center > .banerTopOver, :root #adv_unisound ~ #main > #slidercontentContainer, :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root #adv_unisound ~ #ad_module_cont > [id^="ad_module"], :root a[href*="/get-torrent.ru"], :root #adv_kod_frame ~ #gotimer, :root a[href^="https://ad.zanox.com/ppc/"] > img, :root #MT_overroll ~ div[class][style="left:0px;top:0px;height:480px;width:650px;"], :root a[href*="//appt12mn.com/"], :root a[href*="://offergate-apps-phkr.com/"], :root span[id^="ezoic-pub-ad-placeholder-"], :root ins.adsbygoogle[data-ad-slot], :root a[href^="http://tc.tradetracker.net/"] > img, :root ins.adsbygoogle[data-ad-client], :root guj-ad, :root gpt-ad, :root a[href*="//refpaewsbc.top/"], :root img[src*="//i.i.ua/r/"], :root [href="https://www.masstortfinancing.com/"] > img, :root div[id^="zergnet-widget"], :root div[id^="smi_teaser_"], :root div[id^="vuukle-ad-"], :root a[href*="://dafeb.ru/"], :root div[id^="taboola-stream-"], :root [href^="https://go.xlrdr.com"], :root div[id^="sticky_ad_"], :root div[id^="st"][style^="z-index: 999999999;"], :root a[href*="shakespoint.com"], :root div[id^="pa_sticky_ad_box_middle_"], :root a[href^="https://cams.imagetwist.com/in/?track="], :root div[id^="gpt_ad_"], :root div[id^="ezoic-pub-ad-"], :root a[href*="fortedrow.pro"], :root div[id^="dfp-ad-"], :root a[href^="https://lone-pack.com/"], :root div[id^="crt-"][style], :root #root > .app .brand-widget__right-cl, :root div[id^="adspot-"], :root a[href*="trk-1.com"], :root div[id^="adrotate_widgets-"], :root ps-connatix-module, :root div[id^="ad_position_"], :root img[title="bigmir)net TOP 100"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root a[href^="https://s.optzsrv.com/"], :root div[data-id-advertdfpconf], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-alias="300x250 Ad 2"], :root div[data-adunit], :root div[data-adunit-path], :root div[data-adname], :root a[href*="//partners.house/"], :root [id^="unit_"] > a[href*="://mirtesen.ru"], :root div[data-ad-targeting], :root [data-wpas-zoneid], :root div[data-ad-placeholder], :root a[href*="/go.1k3.net/"], :root div[class^="native-ad-"], :root a[href^="http://premonitioninventdisagree.com/"], :root div[class^="kiwi-ad-wrapper"], :root div[aria-label="Ads"], :root a[href^="https://service.bv-aff-trx.com/"], :root display-ads, :root display-ad-component, :root a[href^="http://putanapartners.com/go."], :root atf-ad-slot, :root [id^="relap-custom-iframe-rec"], :root aside[id^="adrotate_widgets-"], :root a[href*="ftpglst.com"], :root [href^="https://wct.link/click?"], :root [data-name="adaptiveConstructorAd"], :root a[href^="//stighoazon.com/"], :root ark-top-ad, :root a[href*="kma1.biz"], :root noindex > .search_result[class*="search_result_"], :root a[href^="https://go.xlvirdr.com"], :root amp-fx-flying-carpet, :root #PopWin[onmousemove], :root a[href*="//1xbetlk.site/"], :root amp-embed[type="taboola"], :root a[class*="button"][href^="//"][href*="yandex"][onclick*="dnl"][onclick*="knopka"], :root a[href*="//myblogshop.top/r/"], :root a[href*="://gridsiali.com/"], :root a[href*=".twkv.ru"], :root a[href*="//dagamah.com/"], :root [href^="https://antiagingbed.com/discount/"] > img, :root amp-ad-custom, :root [data-url*="://installpack.net"], :root amp-ad, :root [href^="https://glersakr.com/"], :root a[href*="://tdsrotations.ru/"], :root div[id^="google_dfp_"], :root ad-slot, :root ad-shield-ads, :root a[href*="//universalie.info/"], :root [href*="://drp.su/"], :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], :root div[id^="div-ads-"], :root a[href*="://downloadbrowsernew.com/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root iframe[src*="tureckiy-serial.ru/"][src$=".php"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root a[href^="https://xbet-4.com/"], :root div[id^="ad-position-"], :root a[href^="https://disobediencecalculatormaiden.com/"], :root a[href^="https://www.toprevenuegate.com/"], :root a[href^="https://get-link.xyz/"], :root a[href^="https://www.sugarinstant.com/?partner_id="], :root a[href*="news-sphere.com"], :root [name^="google_ads_iframe"], :root a[href*="goext.info"], :root a[href^="https://ab.advertiserurl.com/aff/"], :root a[href*="://sdertjnbv.xyz/"], :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="https://t.ajump1.com/"], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root iframe[src*="laim.tv/rotator/"], :root a[href*="/advertisesimple.info"], :root a[href*="/ber-ter.com"], :root a[href^="https://www.onlineusershielder.com/"], :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://financeads.net/tc.php?"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://www.highperformancecpmgate.com/"], :root a[href*="ex.24smi.info"], :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href*="://filetaker.ru/"], :root a[href^="https://lnkxt.bannerator.com/"], :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="https://www.financeads.net/tc.php?"], :root [href^="https://www.herbanomic.com/"] > img, :root div[id^="bidvol-widget-"], :root a[href*="://kinobud.site/"], :root a[href^="https://maymooth-stopic.com/"], :root a[href^="https://www.dql2clk.com/"], :root a[href*="browser-ru.site"], :root a[href^="https://123-stream.org/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root .mywidget__col > .mywidget__link_advert, :root a[href^="https://explore-site.com/"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root a[href*="://clickstats.online/"], :root [href^="https://www.targetingpartner.com/"], :root a[href^="https://www.adxsrve.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root [data-template-type="nativead"], :root a[href^="https://www.endorico.com/Smartlink/"], :root a[href^="https://voluum.prom-xcams.com/"], :root a[href^="https://twinrdsrv.com/"], :root [href*="://simpalsid.com/ad/click?id"], :root [href^="https://turtlebids.irauctions.com/"] img, :root a[href^="https://tracking.avapartner.com/"], :root a[href^="http://reals-story.ru/"], :root a[href^="https://track.wg-aff.com"], :root div[data-type="_mgwidget"]:not(.eyeo), :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href*="goodtrack.ru"], :root a[href^="https://torguard.net/aff.php"] > img, :root a[href*="//universalies.info/"], :root a[href*="://clickbytes.ru/"], :root [data-identity="adhesive-ad"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://tatrck.com/"], :root a[href^="https://click.candyoffers.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://t.aslnk.link/"], :root a[href^="https://t.adating.link/"], :root [class^="fpm_"][class*="_modal"], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root AD-SLOT, :root [data-block-type="ad"], :root a[href^="https://t.acam.link/"], :root a[href*="/rapidtor.site"], :root a[href*="//daichoho.com/"], :root a[href^="https://go.trackitalltheway.com/"], :root div[data-alias="300x250 Ad 1"], :root a[href^="https://syndicate.contentsserved.com/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="https://svb-analytics.trackerrr.com/"], :root app-advertisement, :root a[href^="https://ad.doubleclick.net/"], :root div[class*="relap"][class*="-rec-item"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://slkmis.com/"], :root a[href^="https://go.xlivrdr.com"], :root bottomadblock, :root a[href*="trtkp.ru"], :root a[href*="//fofuvipibo.com/"], :root a[href^="https://s.zlink3.com/"], :root div[id^="criteo-"][style], :root a[href*="://edugrampromo.com/"], :root a[href*="://cozibaneco.com/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://random-affiliate.atimaze.com/"], :root .base-page_center > .banerBottom, :root #kt_player > div[style$="display: block;"][style*="inset: 0px;"], :root a[href*="//refpabjgth.top/"], :root a[href^="https://www.friendlyduck.com/AF_"], :root a[href^="https://quotationfirearmrevision.com/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://ak.oalsauwy.net/"], :root a[href^="https://softwa.cfd/"], :root div[id^="ads_games_"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://www.dating-finder.com/?ai_d="], :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root a[href*="://folltiz.site/"], :root body > div[style="position: fixed; z-index: 999999; width: 400px; height: 308px; left: 5px; bottom: 5px;"], :root app-ad, :root div[id^="Crt-"][style], :root [href^="https://ap.octopuspop.com/click/"] > img, :root a[href*="//utimg.ru/"], :root a[href^="https://postback1win.com/"], :root div[id^="M"][id*="Composite"], :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://combodef.com/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root iframe[id^="marketgid_"], :root a[onclick*="n284adserv.com"], :root a[href^="https://pb-track.com/"], :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://pb-front.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://adultfriendfinder.com/go/"], :root div[class^="Adstyled__AdWrapper-"], :root a[href^="https://osfultrbriolenai.info/"], :root a[href^="https://ngineet.cfd/"], :root a[href^="https://upsups.click/"], :root a[href*="homework.ru/?partnerId="], :root a[href^="https://s.deltraff.com/"], :root a[href^="https://ndt5.net/"], :root a[href^="http://eighteenderived.com/"], :root .OUTBRAIN[data-widget-id^="FMS_REELD_"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root a[href*="//adoffer.pro/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root span[data-ez-ph-id], :root a[href*="gpclick.ru"], :root a[href^="https://a.bestcontentweb.top/"], :root [data-type="ad-vertical"], :root a[href^="https://lobimax.com/"], :root a[href^="https://go.xxxijmp.com"], :root a[href^="https://lead1.pl/"], :root a[href*="katuhus.com"], :root a[data-href*="recreativ.ru"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://join.virtuallust3d.com/"], :root a[href^="https://kiksajex.com/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://snowdayonline.xyz/"], :root a[href*="://parandaya.com"], :root a[href*="cosmolot.me/"][href*="banner"], :root [data-ad-name], :root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"], :root [href*="://click.1k3pub.com/"], :root a[href^="https://join.dreamsexworld.com/"], :root .player-wrap > #kt_player ~ .spot-box, :root a[href*="amgfile.ru"], :root a[href*="amigo-biz.ru/ads/click"], :root a[href^="https://jaxofuna.com/"], :root [href*="://click.1k3web.net/"], :root a[href^="https://aweptjmp.com/"], :root a[href^="https://itubego.com/video-downloader/?affid="], :root a[href^="https://italarizege.xyz/"], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root a[href*="//adretarget.net/"], :root a[href^="https://golinks.work/"], :root a[href^="https://go.xxxvjmp.com/"], :root a[href*="re-directme.com"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root div[style*="am15.net/img/player_skins"], :root a[href^="https://go.xxxiijmp.com"], :root a[href*="://softclicks.ru/"], :root a[href^="https://go.xtbaffiliates.com/"], :root [data-role="tile-ads-module"], :root a[href^="https://go.xlviirdr.com"], :root [data-css-class="dfp-inarticle"], :root a[href^="https://go.xlviiirdr.com"], :root a[href*="://viewfilesup.ru/"], :root [alt="Rambler's Top100"], :root a[href^="https://ismlks.com/"], :root a[href^="https://go.xlirdr.com"], :root a[href^="https://l.hyenadata.com/"], :root [id^="newPortal_informer_"], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.nordvpn.net/aff"] > img, :root a[href*="//offergate.pro/"], :root a[href^="https://lijavaxa.com/"], :root a[href^="https://go.goaserv.com/"], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://go.dmzjmp.com"], :root div[class^="Display_displayAd"], :root a[href^="https://www.bang.com/?aff="], :root a[href*="://takenewsoft.ru/"], :root a[href*="//spishi.vip/"], :root [href*="://edgrmtracking.com/"], :root [data-link*="://topclicks.club/"], :root #mgb-container > #mgb, :root a[href^="https://go.admjmp.com"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a[href*="/onvix.co/promo/"][target=_blank], :root a[href*="//12traffic.ru/"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://clicks.affstrack.com/"] > img, :root a[href^="https://a.candyai.love/"], :root a[href^="https://ak.hauchiwu.com/"], :root a[href*="tdstrk.ru"], :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://engine.blueistheneworanges.com/"], :root a[href^="https://a.adtng.com/"], :root a[href^="https://drumskilxoa.click/"], :root a[href^="https://dl-protect.net/"], :root a[href^="https://rixofa.com/"], :root #ads[style^="position: absolute; z-index: 30; width: 100%; height"], :root a[href*=".foxqck.com/"], :root a[href^="https://ctosrd.com/"], :root [onclick*="content.ad/"], :root a[href^="https://clixtrac.com/"], :root a[href^="https://clicks.pipaffiliates.com/"], :root a[onclick*="/link-fes.ru"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"] > img, :root a[href^="https://datewhisper.life/"], :root a[href^="https://click.linksynergy.com/fs-bin/"] > img, :root body > div[id^="dV"][style^="width"][style*="height"][style*="position"][style*="fixed"][style*="overflow"][style*="z-index"][style*="background"], :root [data-link*="//sub"][data-link*="bubblesmedia."], :root AD-TRIPLE-BOX, :root a[href^="https://click.hoolig.app/"], :root a[href^="https://track.totalav.com/"], :root a[href^="https://ctrdwm.com/"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://gml-grp.com/"], :root a[href^="https://porntubemate.com/"], :root body > iframe[style^="position"][style*="fixed"][id^="iFb"][src^="/?"], :root .ob_container .item-container-obpd, :root a[href^="https://clickadilla.com/"], :root div[class^="yandex_rtb"], :root a[href*="://searchlnk.ru/r/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href*="://yasearchcdn.ru/r/"], :root a[href*="/vkout.ru"], :root a[href^="http://www.iyalc.com/"], :root a[href^="https://claring-loccelkin.com/"], :root [class^="div-gpt-ad"], :root a[href^="https://s.ma3ion.com/"], :root a[href^="https://bongacams2.com/track?"], :root a[href^="https://t.ajrkm1.com/"], :root [href="https://masstortfinancing.com"] img, :root a[href^="https://getmatchedlocally.com/"], :root a[href^="https://6-partner.com/"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="https://bngpt.com/"], :root a[href^="https://black77854.com/"], :root [data-dynamic-ads], :root a[href^="https://banners.livepartners.com/"], :root [onclick*=".twkv.ru"], :root a[href^="http://revolvemockerycopper.com/"], :root a[href^="https://awptjmp.com/"], :root a[href*="/universalsrc.net/"], :root [href="https://ourgoldguy.com/contact/"] img, :root a[href^="https://join.sexworld3d.com/track/"], :root img[onclick*="clustrmaps.com/counter/"], :root div[id*="Teaser_Block"], :root a[href^="https://intenseaffiliates.com/redirect/"], :root a[href*="/uloads.ru/"], :root #root > .app .adfox, :root [class^="s2nPlayer"], :root iframe[src*="//refpakglscpj."], :root a[href^="http://olivka.biz/"], :root [data-ad-cls], :root a[href^="https://chaturbate.jjgirls.com/?track="], :root .app.blog-post-page .secondary-header-ad-block, :root a[href^="https://ausoafab.net/"], :root a[href^="https://activate-game.com/"], :root .scroll-fixable.rail-right > .deals-rail, :root a[href^="https://a2.adform.net/"], :root a[href^="https://auesk.cfd/"], :root iframe[src*="://partner-widget.vse-sdal.com/"], :root [href^="https://mylead.global/stl/"] > img, :root a[href^="https://ak.psaltauw.net/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href*="litewebbusiness.com"], :root [href*="://shopblogger.top/"], :root a[href*="://manysoftlink.ru/"], :root a[href^="https://bc.game/"], :root body > div[style="background-color: #FFF;height: 100px;position: fixed;bottom: 0px;width: 100%;max-width: 1200px;left: 50%;transform: translateX(-50%);z-index:2147483647"], :root a[href^="https://ads.planetwin365affiliate.com/"], :root a[href*="://go.click2bit.net/"], :root a[href^="https://ads.leovegas.com/"], :root a[href*="/fastvk.com"], :root a[href^="https://playnano.online/offerwalls/?ref="], :root div[id^="smi2adblock_"], :root [data-m-ad-id], :root a[href^="https://a-ads.com/"], :root a[href*="muz-loader.site"], :root a[href*="clickscloud.net"], :root div[id^="rc-widget-"], :root a[href^="http://eslp34af.click/"], :root a[href^="https://turnstileunavailablesite.com/"], :root a[href*="://click2soft.ru/"], :root a[href*="//do-rod.com/"], :root a[href^="https://kshop"][href*=".pro/"], :root a[href^="https://chaturbate.com/in/?"], :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root [data-revive-zoneid] > iframe, :root a[href*="&maxads="], :root div[id^="optidigital-adslot"], :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="https://1betandgonow.com/"], :root a[href*="netcrys.com"], :root [class^="flat_"][class*="_crss"], :root a[href^="https://eergortu.net/"], :root a[href*="/sarimsolus.com/"], :root a[href^="https://allhost.shop/aff.php?"], :root a[href^="http://vnte9urn.click/"], :root iframe[src*="://partner-widget.vsesdal.com/"], :root a[href^="https://getvideoz.click/"], :root a[href^="https://fc.lc/ref/"], :root a[href^="http://troopsassistedstupidity.com/"], :root [data-desktop-ad-id], :root a[href*="/kshop3.biz"], :root a[href^="http://trk.globwo.online/"], :root [href^="https://affiliate.fastcomet.com/"] > img, :root a[href*="//universalice.info/"], :root a-ad, :root a[class*="button"][href^="/go/"][href*="visitid"][onclick*="dnl"], :root a[href^="https://offhandpump.com/"], :root a[href^="http://adultfriendfinder.com/go/"], :root a[href^="http://stickingrepute.com/"], :root #slashboxes > .deals-rail, :root [data-rc-widget="data-rc-widget"], :root a[href^="https://track.adform.net/"], :root a[href^="https://in.rabbtrk.com/"], :root a[href*="://yourlnk.ru/r/"], :root [id^="n4p_"], :root a[href^="http://www.h4trck.com/"], :root a[href^="https://81ac.xyz/"], :root a[href^="http://guestblackmail.com/"], :root [data-adblockkey], :root a[href*="filebase.me"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root [href^="https://www.mypatriotsupply.com/"] > img, :root a[href^="https://trk.softonixs.xyz/"], :root a[href^="https://sexynearme.com/"], :root a[href^="https://myclick-2.com/"], :root a[href^="http://dragnag.com/"], :root a[href*="gocdn.ru"], :root a[href*="/jump/next.php?r="], :root a[href^="http://dragfault.com/"], :root a[href*="//loderlx.ru"], :root [id^="div-gpt-ad"], :root img[src*="://r.i.ua/"], :root div[id^="yandex_ad"], :root [data-advadstrackid], :root a[href^="http://muzzlematrix.com/"], :root a[href*="https://relap.io/r?"], :root a[href^="http://avthelkp.net/"], :root a[href^="https://a.medfoodhome.com/"], :root [onclick*="//msetup.pro/"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root a[href^="https://engine.flixtrial.com/"], :root a[href*="//reruniversal.com/"], :root a[href*="tvroff.net"], :root [data-taboola-options], :root a[href*="thor-media.ru/click/"], :root a[href^="http://annulmentequitycereals.com/"], :root a[href^="//startgaming.net/tienda/" i], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href*="://loderkkis.ru"], :root a[href^="https://s.cant3am.com/"], :root a[href*="turbotraf.com"], :root a[href^="//s.st1net.com/splash.php"], :root iframe[src*="utraff.com"], :root a[href^="https://join.virtualtaboo.com/track/"], :root a[href*="cpl1.ru"], :root [id^="ad_sky"], :root a[href^="http://coefficienttolerategravel.com/"], :root a[href*="://clickfrm.com/"], :root a[href^="https://a.medfoodsafety.com/"], :root a[href^=" https://www.friendlyduck.com/AF_"], :root [href^="https://ilovemyfreedoms.com/landing-"], :root .\[\&_\.gdprAdTransparencyCogWheelButton\]\:\!pjra-z-\[5\], :root a[href*="://clickstats.pw/"], :root [href^="http://clicks.totemcash.com/"], :root a[href*="://gonewfiles.ru/"], :root a[href*="twtn.ru/"], :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root a[href*="://telamon"][href*="/tracker/?partner="], :root a[href^="https://t.ajrkm3.com/"], :root a[href*="//portakamus.com/"], :root [href^="https://aads.com/campaigns/"], :root [href^="https://www.profitablegatecpm.com/"], :root a[href*="land-gooods.ru"], :root div[id^="lazyad-"], :root a[href*="://betahit.click/"], :root a[href^="http://com-1.pro/"], :root a[href*="slovosil.com"], :root [class^="adDisplay-module"], :root a[href*="ads-provider.com"], :root a[href^="https://loboclick.com/"], :root a[data-url^="https://vulpix.bet/?ref="], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root [onclick^="location.href='https://1337x.vpnonly.site/"], :root [id^="section-ad-banner"], :root [href^="https://zone.gotrackier.com/"], :root a[href*="//top.mail.ru/jump?"], :root a[href^="http://sarcasmadvisor.com/"], :root a[href*=".adsbid.ru"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root a[href*="trafgid.xyz"], :root a[href*="://getyousoft.ru/"], :root [onclick*="/sb/clk/"], :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href*="://new.torrent-pack.ru/"], :root [href*="//loadbrowser.ru/"], :root [data-rc-widget], :root [data-ad-width], :root a[href*="mixadvert.com"], :root a[href*="/ogclick.com/api/redirect"], :root a[href^="https://baipahanoop.net/"], :root [href^="https://v.investologic.co.uk/"], :root [onclick*="trklp.ru"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root [class^="flat_"][class*="_out"], :root a[href^="http://apytrc.com/click/"], :root [href^="https://join.girlsoutwest.com/"], :root a[href^="https://track.aftrk3.com/"], :root [href^="https://join3.bannedsextapes.com"], :root a[href^="https://bodelen.com/"], :root a[href*="//ufiler-pro2.ru"], :root a[href*=".g2afse.com/"], :root div[id^="adngin-"], :root [href^="https://track.aftrk1.com/"], :root a[href*="://adv-views.com"], :root a[href*="//sub"][href*="bubblesmedia."], :root [href^="https://istlnkcl.com/"], :root a[href^="https://go.cmtaffiliates.com/"], :root a[href^="https://tm-offers.gamingadult.com/"], :root a[href^="http://kshop.biz/"], :root [href^="https://charmingdatings.life/"], :root .base-page_center > .banerTop, :root a[href*="://z.cdn.traffic"][href*="/load"], :root a[href*="//jjgirls.com/sex/Chaturbate"], :root a[href^="https://a.bestcontentfood.top/"], :root [href^="https://cpa.10kfreesilver.com/"], :root [data-id^="div-gpt-ad"], :root img[src*="//counter.yadro.ru/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root [href^="https://awbbjmp.com/"], :root a[data-href^="http://ads.trafficjunky.net/"], :root a[href*="//universalse.info/"], :root a[href*=".adsrv.eacdn.com/"], :root a[href^="http://partners.etoro.com/"], :root [href^="https://ad1.adfarm1.adition.com/"], :root a[href*="://ourbrowser.net"], :root a[href^="https://bngprm.com/"], :root .article-aside-promo a[href][target="_blank"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root [src*="mixadvert.com"], :root [onclick*="msetup"][onclick*="partner"][onclick*="utm_"], :root a[href^="https://go.strpjmp.com/"], :root a[href^="https://go.bushheel.com/"], :root div[class*="publift-widget-"]:has(.fuse-slot-sticky), :root img[width="120"][height="600"], :root a[href^="https://ctjdwm.com/"], :root a[href^="http://bongacams.com/track?"], :root #kt_player > a[target="_blank"], :root a[href^="https://camfapr.com/landing/click/"], :root div[data-ad-wrapper], :root iframe[src*="zhitomir.info/price"], :root .gnt_em_vp_c[data-g-s="vp_dk"], :root [href="//sexcams.plus/"], :root [href^="http://mypillow.com/"] > img, :root #teaser3[style="width: 100%;text-align: center;display: scroll;position:fixed;bottom: 0;margin: 0 auto;z-index: 103;"], :root a[href*="cpl11.ru"], :root a[href^="https://go.rmhfrtnd.com/"], :root [href="https://jdrucker.com/gold"] > img, :root [href*="driftawayforfun.com"], :root a[href^="https://track.1234sd123.com/"], :root a[href*="kinqon.ru"], :root img[src*="://cp.beget.com/promo_data/"], :root zeus-ad, :root [data-testid="prism-ad-wrapper"], :root [href^="https://ad.admitad.com/"], :root [href^="https://mypillow.com/"] > img, :root [data-testid="ad_testID"], :root [href^="https://mypatriotsupply.com/"] > img, :root [href*="://browseit.ru/"], :root a[href^="https://go.hpyjmp.com"], :root [href^="https://mystore.com/"] > img, :root a[href*="beauty-list.ru"], :root iframe[src*="://goodgame.ru/html/embed-player/dist/index.html?partner="], :root citrus-ad-wrapper, :root a[href^="https://go.grinsbest.com/"], :root [href^="//x4pollyxxpush.com/"], :root .base-page_left-side > #left_ban, :root a[href^="https://vo2.qrlsx.com/"], :root [href^="https://www.avantlink.com/click.php"] img, :root a[href*="lifenews24x7.ru"], :root .base-page_container > .banerRight, :root app-large-ad, :root a[href^="https://witnessjacket.com/"], :root a[href*="://mysoftrotate.ru/"], :root [id^="unit_"] > a[href*="smi2."], :root [data-adshim], :root [class^="amp-ad-"], :root a[href*="://lobar.site/r/"], :root a[href^="https://gamingadlt.com/?offer="], :root [onclick*="mixadvert.com"], :root .novelty-banner ~ .dle_b_help > a[target="_blank"], :root .grid > .container > #aside-promotion, :root [href^="https://pxl.leads.su/click/"], :root DFP-AD, :root a[href*="zdravo-med.ru"], :root [data-adbridg-ad-class], :root #teaser3[style^="width:autopx;"], :root [data-ad-manager-id], :root AMP-AD, :root [data-ez-name], :root a[href^="https://go.mnaspm.com/"], :root a[href*="://chikidiki.ru"], :root a[href^="https://traffdaq.com/"], :root [href^="https://www.cloudways.com/en/?id"], :root a[href*="webdiana.ru/click"], :root #teaser1[style^="width:autopx;"], :root [data-la-refresh-timeout], :root a[href*="/api/redirect?offerid="], :root a[href*="/universallnk.net/"], :root a[href*="shakes.pro"], :root [data-freestar-ad][id] { display: none !important; }
+         :root [data-ad-module], :root a[href*="//webbrowser.club/"], :root .pip-video-wrapper > .pip-video-label, :root iframe[src*="traffic-media.co"], :root a[href^="https://losingoldfry.com/"], :root div[id^="div-gpt-"], :root a[href*="//parandeya.com/"], :root [src*="://dynspt.com/"], :root a[href^="https://clickins.slixa.com/"], :root a[href^="https://cam4com.go2cloud.org/"], :root a[href^="http://li.blogtrottr.com/click?"], :root a[href*="://getfiletds.ru/"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root #teaser2[style^="width:autopx;"], :root #leader-companion > a[href] { display: none !important; }
+      </style>
+   </head>
+   <body class="skin-mercury no-skin" style="">
+      <!-- #section:basics/navbar.layout -->
+      <div id="navbar" class="navbar navbar-default navbar-collapse h-navbar ace-save-state navbar-fixed-top">
+         <script type="text/javascript">
+            try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+         </script>
+         <div class="navbar-container" id="navbar-container">
+            <div class="navbar-header pull-left">
+               <!-- #section:basics/navbar.layout.brand -->
+               <a href="#" class="navbar-brand">
+                  <small>
+                     <img src="./assets/mercury-alpha-mini.png" style="padding-right:4px;">
+                     Меркурий
+                     <img src="https://mercury.vetrf.ru/pub/operatorui?_action=showVetDocumentFormByUuid&amp;uuid=a193838a-ef22-40c9-8d9f-920016fbf1dc" class="newyear" id="snowman" style="height:40px;margin-top: -2px;margin-bottom: -3px;margin-left: 5px;display:none;">
+                     <script type="text/javascript">
+                        showNewYear("img.newyear");
+                     </script>
+                  </small>
+               </a>
+               <!-- /section:basics/navbar.layout.brand -->
+               <!-- #section:basics/navbar.toggle -->
+               <button class="pull-right navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-buttons,.navbar-menu">
+               <span class="sr-only">Toggle user menu</span>
+               <i style="font-size: 1.5em;color: #fff;" class="ace-icon fa fa-chevron-down"></i>
+               </button>
+               <button class="pull-right navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".sidebar">
+               <span class="sr-only">Toggle sidebar</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <!-- /section:basics/navbar.toggle -->
+            </div>
+            <!-- #section:basics/navbar.dropdown -->
+            <div class="navbar-buttons navbar-header pull-right collapse navbar-collapse" role="navigation">
+               <ul class="nav ace-nav">
+                  <!-- #section:basics/navbar.user_menu -->
+                  <li class="light-red active">
+                     <a>РУС</a>
+                  </li>
+                  <li class="light-red">
+                     <a href="#" onclick="changeLanguge(&#39;en&#39;);">ENG</a>
+                  </li>
+                  <li class="light-red">
+                     <a href="http://argus.vetrf.ru/pub/operatorui?_action=listForeignEnterprise">
+                     <i class="ace-icon fa fa-share"></i>
+                     Аргус
+                     </a>
+                  </li>
+                  <li class="light-red">
+                     <a href="http://help.vetrf.ru/wiki/%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%9C%D0%B5%D1%80%D0%BA%D1%83%D1%80%D0%B8%D0%B9">
+                     <i class="ace-icon fa fa-life-ring"></i>
+                     Помощь
+                     </a>
+                  </li>
+                  <!-- /section:basics/navbar.user_menu -->
+               </ul>
+            </div>
+            <!-- /section:basics/navbar.dropdown -->
+            <!-- #section:basics/navbar.nav -->
+            <!--
+               <nav role="navigation" class="navbar-menu pull-left collapse navbar-collapse">
+               	<ul class="nav navbar-nav">
+               		<li>
+               			<a href="#" title='6.90.3 '>
+               			<i class="fa fa-angle-right"></i>
+                                       6.90.3
+               			</a>
+               		</li>
+               	</ul>
+               </nav>
+               -->
+            <!-- /section:basics/navbar.nav -->
+         </div>
+         <!-- /.navbar-container -->
+      </div>
+      <!-- /section:basics/navbar.layout -->
+      <div class="main-container" id="main-container" style="padding-top: 45px;">
+         <script type="text/javascript">
+            try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+         </script>
+         <!-- /section:basics/sidebar.horizontal -->
+         <div id="sidebar" class="sidebar h-sidebar navbar-collapse collapse">
+            <script type="text/javascript">
+               try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+            </script>
+            <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+               <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+                  <button onclick="window.location.href=&#39;http://fsvps.ru/&#39;" class="btn btn-success tooltip-error" data-rel="tooltip" data-placement="right" title="" data-original-title="Россельхознадзор">
+                  <i class="vet vet-eagle"></i>
+                  </button>
+                  <button onclick="window.location.href=&#39;http://vetrf.ru/&#39;" class="btn btn-info tooltip-error" data-rel="tooltip" data-placement="right" title="" data-original-title="Ветис">
+                  <i class="vet vet-vetis"></i>
+                  </button>
+                  <!-- #section:basics/sidebar.layout.shortcuts -->
+                  <button onclick="window.location.href=&#39;http://help.vetrf.ru/wiki/%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%9C%D0%B5%D1%80%D0%BA%D1%83%D1%80%D0%B8%D0%B9&#39;" class="btn btn-warning tooltip-error" data-rel="tooltip" data-placement="right" title="" data-original-title="Справочная система">
+                  <i class="ace-icon fa fa-users"></i>
+                  </button>
+                  <!-- /section:basics/sidebar.layout.shortcuts -->
+               </div>
+               <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+                  <span class="btn btn-success"></span>
+                  <span class="btn btn-info"></span>
+                  <span class="btn btn-warning"></span>
+                  <span class="btn btn-danger"></span>
+               </div>
+            </div>
+            <!-- /.sidebar-shortcuts -->
+            <ul class="nav nav-list">
+               <li class="active hover">
+                  <a href="https://mercury.vetrf.ru/pub/operatorui?_action=checkVetDocument">
+                  <i class="menu-icon fa fa-check-circle"></i>
+                  <span class="menu-text"> Проверить ВСД </span>
+                  </a>
+               </li>
+            </ul>
+            <!-- /.nav-list -->
+            <!-- #section:basics/sidebar.layout.minimize -->
+            <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+               <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+            </div>
+            <!-- /section:basics/sidebar.layout.minimize -->
+            <script type="text/javascript">
+               try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+            </script>
+         </div>
+         <div class="main-content">
+            <div class="page-content">
+               <div class="page-content-area">
+                  <!-- PAGE CONTENT BEGINS -->
+                  <div id="main-message-container">
+                  </div>
+                  <script src="./assets/jquery.mask.min.js"></script>
+                  <script>
+                     $(document).ready(function () {
+                        // Маска для ввода остаётся прежней
+                        $("#uuid").mask('ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZ', {
+                           translation: { 'Z': {pattern: /[a-fA-F0-9]/} }
+                        });
+
+                        $("#uuid").on("keyup keypress", function(e) {
+                           if (e.which === 13) {
+                                 findVetDocument($("#uuid"));
+                                 e.preventDefault();
+                                 return false;
+                           }
+                        });
+                     });
+
+                     function calculateSimilarity(str1, str2) {
+                        var len1 = str1.length;
+                        var len2 = str2.length;
+
+                        // Создаем матрицу
+                        var dp = Array(len1 + 1)
+                           .fill(null)
+                           .map(() => Array(len2 + 1).fill(0));
+
+                        // Заполняем базовые значения
+                        for (var i = 0; i <= len1; i++) dp[i][0] = i;
+                        for (var j = 0; j <= len2; j++) dp[0][j] = j;
+
+                        // Основной цикл
+                        for (var i = 1; i <= len1; i++) {
+                           for (var j = 1; j <= len2; j++) {
+                                 var cost = str1[i - 1] === str2[j - 1] ? 0 : 1;
+                                 dp[i][j] = Math.min(
+                                    dp[i - 1][j] + 1, // Удаление
+                                    dp[i][j - 1] + 1, // Вставка
+                                    dp[i - 1][j - 1] + cost // Замена
+                                 );
+                           }
+                        }
+
+                        // Расстояние Левенштейна
+                        var levenshteinDistance = dp[len1][len2];
+
+                        // Вычисляем коэффициент схожести
+                        var maxLength = Math.max(len1, len2);
+                        return (maxLength - levenshteinDistance) / maxLength;
+                     }
+
+                     function findVetDocument(elem) {
+                        // Убираем класс ошибки
+                        elem.closest(".form-group-input-button").removeClass("has-error");
+
+                        // Проверяем формат введенного кода
+                        var expr = new RegExp("[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}");
+
+                        if (!expr.test(elem.val())) {
+                           // Показываем ошибку если формат неверный
+                           elem.closest(".form-group-input-button").addClass("has-error");
+                           elem.data("placement", "bottom")
+                                 .addClass("tooltip-error")
+                                 .tooltip({
+                                    title: "Код ветеринарного документа указан некорректно",
+                                    html: 'html',
+                                    delay: {show: 750, hide: 750}
+                                 });
+                           elem.tooltip('show');
+                           return false;
+                        }
+
+                        // Получаем текущий идентификатор со страницы
+                        var currentId = $(".profile-info-value span:contains('-')").text().trim();
+                        currentId = currentId.substring(0, elem.val().length);
+
+                        // Преобразуем строки в верхний регистр
+                        var inputValue = elem.val().toUpperCase();
+
+                        // Вычисляем точность совпадения
+                        var similarity = calculateSimilarity(inputValue, currentId);
+
+                        // Проверяем совпадение (не менее 95%)
+                        if (similarity >= 0.95) {
+                           // Если совпадает - просто обновляем страницу
+                           window.location.reload();
+                        } else {
+                           // Если нет - переходим на новую страницу
+                           window.location.href = 'https://mercury.vetrf.ru/pub/operatorui?_action=findVetDocumentFormByUuid&uuid=' + elem.val();
+                        }
+                     }
+                  </script>
+                  <style>
+                     img.flag {
+                     margin-bottom: -7px;
+                     border: none !important;
+                     padding: 0 !important;
+                     vertical-align: unset;
+                     }
+                  </style>
+                  <div class="page-header">
+                     <div style="text-align: right">
+                        <div class="form-group-input-button" style="display: inline;">
+                           <div class="input-group" style="width:350px">
+                              <input id="uuid" style="width: 310px; height: 30px;" name="uuid" value="" onreset="resetTextField(&#39;uuid&#39;);" type="text" placeholder="поиск по коду ветеринарного документа" maxlength="39" autocomplete="off">
+                              <span class="input-group-btn">
+                              <button class="btn btn-xs btn-default" style="width: 30px; height: 30px;" type="button" onclick="javascript: findVetDocument($(&#39;#uuid&#39;));">
+                              <i class="fa fa-search bigger-110"></i>
+                              </button>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <h1>
+                           Просмотр информации о ВСД
+                        </h1>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xs-12">
+                        <form class="form-horizontal" role="form" name="showVetDocumentForm" id="showVetDocumentForm" method="POST" action="https://mercury.vetrf.ru/pub/operatorui" enctype="">
+                           <h3 class="header smaller lighter blue"><small>Общие сведения</small></h3>
+                           <div class="profile-user-info profile-user-info-striped">
+                              <div class="profile-info-row">
+                                 <div class="profile-info-name">Статус</div>
+                                 <div class="profile-info-value"><span class="label label-success">оформлен</span></div>
+                              </div>
+                              <div class="profile-info-row">
+                                 <div class="profile-info-name">Номер ВСД</div>
+                                 <div class="profile-info-value"><span class="">29707496142</span></div>
+                              </div>
+                              <div class="profile-info-row">
+                                 <div class="profile-info-name">Уникальный идентификатор ВСД</div>
+                                 <div class="profile-info-value"><span class="">2DDA-CD6D-EA2A-B14A-7A5F-8AA7-EE52-63D9</span></div>
+                              </div>
+                              <div class="profile-info-row">
+                                 <div class="profile-info-name">Дата оформления</div>
+                                 <div class="profile-info-value"><span class="">09.12.2024 11:48:34 МСК<br>
+                                 09.12.2024 10:48:34 МСК-1</span></div>
+                              </div>
+                              <div class="profile-info-row">
+                                 <div class="profile-info-name">Наименование и форма ВСД</div>
+                                 <div class="profile-info-value"><span class="">Производственный сертификат. Форма № 1</span></div>
+                              </div>
+                              <div class="profile-info-row">
+                                 <div class="profile-info-name">Способ оформления</div>
+                                 <div class="profile-info-value"><span class="">шлюз ВетИС.API</span></div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <h3 class="header smaller lighter blue"><small>Информация о продукции</small></h3>
+                                 <div class="profile-user-info profile-user-info-striped">
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Номер производственной партии</div>
+                                       <div class="profile-info-value">
+                                          <ul>
+                                             <li>1354965</li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">GTIN</div>
+                                       <div class="profile-info-value"><span class="">4680115884830</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Тип продукции</div>
+                                       <div class="profile-info-value"><span class="">Пищевые продукты</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Продукция</div>
+                                       <div class="profile-info-value"><span class="">готовые мясные продукты</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Вид продукции</div>
+                                       <div class="profile-info-value"><span class="">готовые мясные продукты</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Название продукции</div>
+                                       <div class="profile-info-value"><span class="">Колбаса Филейная</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Артикул</div>
+                                       <div class="profile-info-value"><span class="">4301011943</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Объём</div>
+                                       <div class="profile-info-value"><span class="">17577,87 кг</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Дата выработки продукции</div>
+                                       <div class="profile-info-value"><span class="">09.12.2024:00</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Годен до</div>
+                                       <div class="profile-info-value"><span class="">07.02.2025:00</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Упаковка</div>
+                                       <div class="profile-info-value">
+                                          <span class="">
+                                             <ul id="packingLevels" style="list-style-type: none; padding-left: 0; margin: 0;">
+                                                <li>
+                                                   Торговый уровень
+                                                   <ul style="list-style-type:disc;padding-left: 20px;">
+                                                      <li>Коробка из фибрового картона (4G), 1&nbsp;135 шт., маркировка: ООО "МК-БАЛТИКА" &nbsp;<span class="help">(Не определен)</span></li>
+                                                   </ul>
+                                                </li>
+                                                <li>
+                                                   Транспортный (Логистический) уровень
+                                                   <ul style="list-style-type:disc;padding-left: 20px;">
+                                                      <li>Поддон (TW), 24 шт.</li>
+                                                   </ul>
+                                                </li>
+                                             </ul>
+                                          </span>
+                                       </div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Ветеринарно-санитарная экспертиза</div>
+                                       <div class="profile-info-value"><span class="">изготовлена из сырья, прошедшего ветеринарно-санитарную экспертизу</span></div>
+                                    </div>
+                                 </div>
+                                 <h3 class="header smaller lighter blue"><small>Фасовка</small></h3>
+                                 <div class="profile-user-info profile-user-info-striped">
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Тип упаковки</div>
+                                       <div class="profile-info-value"><span class="">Штука</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Количество единиц упаковки</div>
+                                       <div class="profile-info-value"><span class="">1</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Объем единицы упаковки товара</div>
+                                       <div class="profile-info-value"><span class="">2,5 кг</span></div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <h3 class="header smaller lighter blue"><small>Сведения об оформлении</small></h3>
+                                 <div class="profile-user-info profile-user-info-striped">
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Учреждение</div>
+                                       <div class="profile-info-value"><span class="">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МК-БАЛТИКА" (РФ, Калининградская обл., п. Котельниково)</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">ФИО</div>
+                                       <div class="profile-info-value"><span class="">Филимонова Алина Александровна</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Должность</div>
+                                       <div class="profile-info-value"><span class=""></span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Контактный телефон</div>
+                                       <div class="profile-info-value"><span class="">&nbsp;</span></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <h3 class="header smaller lighter blue"><small>Сведения о происхождении продукции</small></h3>
+                                 <div class="profile-user-info profile-user-info-striped">
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Страна происхождения</div>
+                                       <div class="profile-info-value"><span class="">Российская Федерация</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Выработанная</div>
+                                       <div class="profile-info-value">
+                                          <b>ХС:</b>
+                                          ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МК-БАЛТИКА" (ИНН: 3915009011) <b>на площадке:</b>
+                                          ООО "МК-БАЛТИКА" (РФ, Калининград ская обл., п. Котельниково)<br>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <h3 class="header smaller lighter blue" onclick="$(this).next(&#39;.profile-user-info&#39;).toggle();$(this).find(&#39;i&#39;).toggle();" style="cursor: pointer;"><small class="dashed-underline" style="border-color: #777;">Служебная информация</small>&nbsp;<i class="fa fa-angle-double-up" style="font-size: 16px; display: none;"></i><i class="fa fa-angle-double-down" style="font-size: 16px; display: inline-block;"></i></h3>
+                                 <div class="profile-user-info profile-user-info-striped" style="display: none;">
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Уникальный идентификатор версии номенклатуры (UUID)</div>
+                                       <div class="profile-info-value"><span class="">bdfb5e7d-2c6d-4bca-a8bf-b4957e6ccc4d</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Глобальный идентификатор номенклатуры (GUID)</div>
+                                       <div class="profile-info-value"><span class="">ec6bd261-7e77-4269-b285-12ed2bd0e56a</span></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <h3 class="header smaller lighter blue"><small>Сведения о владельце</small></h3>
+                                 <div class="profile-user-info profile-user-info-striped">
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Название предприятия</div>
+                                       <div class="profile-info-value"><span class="">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МК-БАЛТИКА" (РФ, Калининградская обл., п. Котельниково)</span></div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                       <div class="profile-info-name">Хозяйствующий субъект (владелец продукции)</div>
+                                       <div class="profile-info-value"><span class="">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МК-БАЛТИКА", ИНН: 3915009011</span></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <input id="_action" name="_action" type="hidden" value="findVetDocumentFormByUuid">
+                        </form>
+                     </div>
+                  </div>
+                  <!-- PAGE CONTENT ENDS -->
+               </div>
+               <!-- /.page-content-area -->
+            </div>
+            <!-- /.page-content -->
+         </div>
+         <!-- /.main-content -->
+         <div class="footer">
+            <div class="footer-inner">
+               <!-- #section:basics/footer -->
+               <div class="footer-content">
+                  <span class="bigger-120">
+                     <span class="brown bolder">Меркурий</span>
+                     версия
+                     6.90.3
+                     <script type="text/javascript">
+                        var d = new Date();
+                        document.write('&copy; 2010-' + d.getFullYear());
+                     </script>© 2010-2024
+                  </span>
+               </div>
+               <!-- /section:basics/footer -->
+            </div>
+         </div>
+         <a href="https://mercury.vetrf.ru/pub/operatorui?_action=showVetDocumentFormByUuid&amp;uuid=a193838a-ef22-40c9-8d9f-920016fbf1dc#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+         <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+         </a>
+      </div>
+      <!-- /.main-container -->
+      <!-- basic scripts -->
+      <!--[if !IE]> -->
+      <script type="text/javascript">
+         window.jQuery || document.write("<script src='/vetcontrol-docs/pub/js/jquery.min.js'>"+"<"+"/script>");
+      </script>
+      <!-- <![endif]-->
+      <!--[if IE]>
+      <script type="text/javascript">
+         window.jQuery || document.write("<script src='/vetcontrol-docs/pub/js/jquery1x.min.js'>"+"<"+"/script>");
+      </script>
+      <![endif]-->
+      <script type="text/javascript">
+         if('ontouchstart' in document.documentElement) document.write("<script src='./assets/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+      </script>
+      <script src="./assets/bootstrap.min.js"></script>
+      <!-- page specific plugin scripts -->
+      <script src="./assets/jquery-ui.custom.min.js"></script>
+      <script src="./assets/jquery.ui.touch-punch.min.js"></script>
+      <script src="./assets/bootstrap-datepicker.min.js"></script>
+      <script src="./assets/bootstrap-timepicker.min.js"></script>
+      <script src="./assets/moment.min.js"></script>
+      <script src="./assets/daterangepicker.min.js"></script>
+      <script src="./assets/bootstrap-datetimepicker.min.js"></script>
+      <script src="./assets/bootstrap-datepicker.ru.js" charset="UTF-8"></script>
+      <!-- ace scripts -->
+      <script src="./assets/ace.min.js"></script>
+      <script src="./assets/ace-elements.min.js"></script>
+      <script src="./assets/chosen.jquery.min.js"></script>
+      <!-- inline scripts related to this page -->
+      <script type="text/javascript">
+         jQuery(function($) {
+          var $sidebar = $('.sidebar').eq(0);
+          if( !$sidebar.hasClass('h-sidebar') ) return;
+
+          $(document).on('settings.ace.top_menu' , function(ev, event_name, fixed) {
+         	if( event_name !== 'sidebar_fixed' ) return;
+
+         	var sidebar = $sidebar.get(0);
+         	var $window = $(window);
+
+         	//return if sidebar is not fixed or in mobile view mode
+         	if( !fixed || ( ace.helper.mobile_view() || ace.helper.collapsible() ) ) {
+         		$sidebar.removeClass('hide-before');
+         		//restore original, default marginTop
+         		ace.helper.removeStyle(sidebar , 'margin-top')
+
+         		$window.off('scroll.ace.top_menu')
+         		return;
+         	}
+         	 var done = false;
+         	 $window.on('scroll.ace.top_menu', function(e) {
+
+         		var scroll = $window.scrollTop();
+         		scroll = parseInt(scroll / 4);//move the menu up 1px for every 4px of document scrolling
+         		if (scroll > 17) scroll = 17;
+
+
+         		if (scroll > 16) {
+         			if(!done) {
+         				$sidebar.addClass('hide-before');
+         				done = true;
+         			}
+         		}
+         		else {
+         			if(done) {
+         				$sidebar.removeClass('hide-before');
+         				done = false;
+         			}
+         		}
+
+         		sidebar.style['marginTop'] = (17-scroll)+'px';
+         	 }).triggerHandler('scroll.ace.top_menu');
+
+          }).triggerHandler('settings.ace.top_menu', ['sidebar_fixed' , $sidebar.hasClass('sidebar-fixed')]);
+
+          $(window).on('resize.ace.top_menu', function() {
+         	$(document).triggerHandler('settings.ace.top_menu', ['sidebar_fixed' , $sidebar.hasClass('sidebar-fixed')]);
+          });
+
+
+         });
+
+         $(document).ready( function() {
+                      $('label[data-for]').off('click').on('click', function(){
+                          var id =$(this).attr('data-for');
+                          setTimeout(function(){
+                              $('#'+ id).trigger('chosen:open');
+                          }, 0);
+                      });
+                      $(window).scroll(fixHeader);
+                      $(window).resize(fixHeader)
+                      fixHeader();
+                      $("[data-rel='tooltip']").tooltip();
+                  });
+      </script>
+      <script src="./assets/elements.onpage-help.js"></script>
+      <script src="./assets/ace.onpage-help.js"></script>
+      <script src="./assets/app.js"></script>
+      <script src="./assets/staticapp.js"></script>
+      <div id="winAjaxShowForm" aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal fade bs-example-modal-lg" style="display: none;"></div>
+      <script src="./assets/preloader.js" type="text/javascript"></script>
+   </body>
+</html>
